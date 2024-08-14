@@ -36,9 +36,9 @@ public class Principal {
             case 1:
                 builderNewProfile();
                 break;
-            case 2:
-                sortByAlphabetical();
-                break;
+//            case 2:
+//                sortByAlphabetical();
+//                break;
             case 0:
                 System.out.println("Saindo...");
                 break;
@@ -55,11 +55,11 @@ public class Principal {
         return convertData.getData(json, ApiForProfile.class);
     }
 
-    private void sortByAlphabetical() {
-        ApiForProfile dataJson = convetJson();
-        ApiForProfile alphabetical = repository.findByNameOrderByFirstDesc();
-        alphabetical.results().forEach(System.out::println);
-    }
+//    private void sortByAlphabetical() {
+//        ApiForProfile dataJson = convetJson();
+//        ApiForProfile alphabetical = repository.findByNameOrderByFirstDesc();
+//        alphabetical.results().forEach(System.out::println);
+//    }
 
     private void builderNewProfile() {
         ApiForProfile profile = convetJson();
