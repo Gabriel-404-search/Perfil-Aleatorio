@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 @Entity
 @Table (name = "Dia_do_aniversario")
 public class OrderDateOfBirth {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

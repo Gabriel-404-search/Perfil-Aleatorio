@@ -20,6 +20,9 @@ public class OrderName {
         this.last = results.name().last();
     }
 
+    public OrderName() {
+    }
+
     public Long getId() {
         return id;
     }

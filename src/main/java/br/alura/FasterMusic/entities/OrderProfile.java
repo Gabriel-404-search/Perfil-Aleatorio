@@ -1,9 +1,8 @@
 package br.alura.FasterMusic.entities;
 
 import br.alura.FasterMusic.enums.Gender;
-import br.alura.FasterMusic.models.*;
+import br.alura.FasterMusic.models.Results;
 import jakarta.persistence.*;
-import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 @Table (name = "profile")

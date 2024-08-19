@@ -1,11 +1,10 @@
 package br.alura.FasterMusic.entities;
 
-import br.alura.FasterMusic.models.ApiForLocation;
 import br.alura.FasterMusic.models.Results;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Rua do endereço")
+@Table(name = "rua_do_endereco")
 public class OrderStreet {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,6 +16,9 @@ public class OrderStreet {
     public OrderStreet(Results results) {
         this.name = results.location().street().name();
         this.number = results.location().street().number();
+    }
+
+    public OrderStreet() {
     }
 
     public Long getId() {

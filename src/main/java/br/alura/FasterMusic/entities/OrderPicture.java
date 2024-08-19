@@ -18,6 +18,9 @@ public class OrderPicture {
         this.medium = results.picture().medium();
     }
 
+    public OrderPicture() {
+    }
+
     public Long getId() {
         return id;
     }

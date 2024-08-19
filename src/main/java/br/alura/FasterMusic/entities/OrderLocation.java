@@ -26,6 +26,9 @@ public class OrderLocation {
         this.postcode = results.location().postcode();
     }
 
+    public OrderLocation() {
+    }
+
     public void setId(Long id) {
         this.id = id;
     }
